@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ingreso de pasajeros</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+</head>
+<body>
+    <div class="conteiner-sm p-4 row">
+        <!-- DATA ENTER -->
+
+            <div class="container-sm p-3 border bg-ligth rounded-3" style="width: 65%; background-color: #eee;">
+                <h3>Datos personales</h3>
+                <form action="" class="row g-3 needs-validation" novalidate">
+                    <div class="col-md-2 "> 
+                        <label for="dni" class="form-label">Documento</label>
+                        <input type="text" id="dni" class="form-control" required>
+                    </div>
+                    <div class="valid-feedback">
+                        Documento requerido
+                    </div>
+                    <div class="col-md-6">
+                        <label for="name" class="form-label">Nombre</label>
+                        <input type="text" id="name" class="form-control">
+                    </div>
+    
+                    <div class="col-md-4">
+                        <label for="location" class="form-label">Localidad</label>
+                        <input type="text" id="location" class="form-control">
+                    </div>
+                    <div class="col-md-3">
+                        <label for="state" class="form-label">Provincia</label>
+                        <input type="text" id="state" class="form-control">
+                    </div>
+                    <div class="col-md-6">
+                        <label for="email" type="email" class="form-label">E-mail</label>
+                    <div class="input-group has-validation">
+                        <span class="input-group-text" id="inputGroupPrepend">@</span>
+                        <input type="text" id="email" class="form-control" placeholder="nombre@direccion.com">
+                    </div>
+                    </div>
+                    <div class="col-md-3">
+                        <label for="cellphone" class="form-label">Celular</label>
+                        <input type="text" id="cellphone" class="form-control" placeholder="solo numeros">
+                    </div>
+                </form>
+            </div>
+ 
+            <div class="container-sm p-3 border bg-ligth rounded-3" style="width: 30%; background-color: #eee;">
+                <h3>Datos comerciales</h3>
+                <form action="" class="row g-3" novalidate">
+                    <div class="col-md-4 "> 
+                        <label for="cuit" class="form-label">CUIT</label>
+                        <input type="text" id="cuit" class="form-control">
+                    </div>
+
+                    <div class="col-md-8 "> 
+                        <label for="razon" class="form-label">Razon social</label>
+                        <input type="text" id="razon" class="form-control">
+                    </div>
+                 
+                    <div class="col-6">
+                        <label for="clientType" class="form-label">Tipo de cliente</label>
+                        <select name="clientType" id="clientType" class="form-select">
+                            <option value="contado">Contado</option>
+                            <option value="stia">STIA</option>
+                            <option value="uthgra">UTHGRA</option>
+                            <option value="vialidad">Vialidad</option>
+                            <option value="camioneros">Camioneros</option>
+                            <option value="ateJub">ATE JUB</option>
+                            <option value="seguridad">Seguridad</option>
+                        </select>
+                    </div>
+
+                    <div class="col-md-6 "> 
+                        <label for="factura" class="form-label">Factura</label>
+                        <input type="text" id="factura" class="form-control">
+                    </div>
+                </form>
+            </div>
+        <!-- BUTTONS -->
+        <div class="container-sm p-3 mt-3 border bg-ligth rounded-3" style="width: 30%; background-color: #eee;">
+            <form action="" class="row align-content-end" novalidate">
+                <div class="col-4">
+                    <button type="button" class="btn btn-secondary">Borrar</button>
+                </div>
+                <div class="col-4">
+                    <button type="button" class="btn btn-secondary">Cancelar</button>
+                </div>
+                <div class="col-4">
+                    <button type="button" class="btn btn-primary">Guardar</button>
+                </div>
+            </form>
+        </div>
+        <!-- SHOW DATA -->
+        <div class="table_data row mt-3">
+            <table class="table table-light">
+                <th scope="col">Documento</th>
+                <th scope="col">Nombre</th>
+                <th scope="col">Localidad</th>
+                <th scope="col">Provincia</th>
+                <th scope="col">E-mail</th>
+                <th scope="col">Celular</th>
+                <th scope="col">Tipo de cliente</th>   
+            </table>
+        </div>
+    </div>
+    <script src="./src/index.js"></script>
+</body>
+</html>
