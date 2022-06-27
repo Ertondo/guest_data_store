@@ -1,3 +1,7 @@
 body{
     background:  linear-gradient(to right, #2193b0, #6dd5ed) !important;    
 }
+.nuevo{
+    background: #2193b0;
+    width: 200px;
+}

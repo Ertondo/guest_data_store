@@ -56,8 +56,8 @@
                         </div>
 
                         <div class="col-md-8 "> 
-                            <label for="razon" class="form-label">Razon social</label>
-                            <input type="text" name="razon" id="razon" class="form-control">
+                            <label for="business_name" class="form-label">Razon social</label>
+                            <input type="text" name="business_name" id="business_name" class="form-control">
                         </div>
                     
                         <div class="col-md-5">
@@ -74,8 +74,8 @@
                         </div>
                         
                         <div class="col-md-5 "> 
-                            <label for="factura" class="form-label">Factura</label>
-                            <input type="text" name="num_factura" id="factura" class="form-control">
+                            <label for="invoice" class="form-label">Factura</label>
+                            <input type="text" name="num_invoice" id="invoice" class="form-control">
                         </div>
                     </div>
             </div>
@@ -83,22 +83,25 @@
         <!-- BUTTONS -->
         <div class="container-sm row m-2">
             <div class="col d-flex flex-row-reverse ">
-                    <button name="btn_erase" type="submit" class="btn btn-secondary m-2">Borrar</button>
-                    <button name="btn_cancel" type="submit" class="btn btn-secondary m-2">Cancelar</button>
-                    <button name="btn_save" type="submit" class="btn btn-primary m-2">Guardar</button>
+                <button name="btn_cancel" type="submit" class="btn btn-secondary m-2">Cancelar</button>
+                <button name="btn_erase_inputs" type="submit" class="btn btn-secondary m-2">Borrar campos</button>
+                <button name="btn_add_more" type="submit" class="btn btn-primary m-2">Siguiente</button>
+                <button name="btn_save_all" type="submit" class="btn btn-primary m-2">Finalizar</button>
             </div>
         </div>
 
         <!-- SHOW DATA -->
-        <div class="table_data row mt-2">
-            <table class="table table-light">
+        <div class="conteiner-sm m-2 table_data row">
+            <table class="table table-light table-striped" id="table_personal_data">
+                <th scope="col">X</th>                
                 <th scope="col">Documento</th>
                 <th scope="col">Nombre</th>
                 <th scope="col">Localidad</th>
                 <th scope="col">Provincia</th>
                 <th scope="col">E-mail</th>
                 <th scope="col">Celular</th>
-                <th scope="col">Tipo de cliente</th>   
+                <th scope="col">Tipo de cliente</th> 
+                <th scope="col">Factura</th>   
             </table>
         </div>
     </div>
